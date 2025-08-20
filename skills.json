@@ -1,0 +1,575 @@
+{
+  "Daten & Storage": {
+    "color": "text-purple-300",
+    "background": "bg-purple-300",
+    "position": {
+      "top": 100,
+      "left": 100
+    },
+    "width": 4,
+    "skills": {
+      "p1": {
+        "placeholder": true
+      },
+      "Message Queues": {
+        "what": "Systeme zur asynchronen Kommunikation zwischen Services, bei denen Nachrichten in einer Warteschlange zwischengespeichert werden.",
+        "why": "Um Systeme zu entkoppeln, die Ausfallsicherheit zu erhöhen und Lastspitzen abzufedern, indem Anfragen gepuffert werden."
+      },
+      "p2": {
+        "placeholder": true
+      },
+      "p3": {
+        "placeholder": true
+      },
+      "Trans&shy;aktions&shy;management": {
+        "what": "Die Sicherstellung der Datenintegrität durch die Steuerung von Transaktionen (z.B. nach dem ACID-Prinzip), auch über Systemgrenzen hinweg.",
+        "why": "Um zu garantieren, dass Geschäftsvorgänge entweder vollständig oder gar nicht ausgeführt werden. Verhindert inkonsistente Datenzustände."
+      },
+      "Relationale Designs & SQL": {
+        "important": true,
+        "what": "Der Entwurf von sauberen, normalisierten Datenmodellen für relationale Datenbanken (SQL).",
+        "why": "Weil sie eine bewährte, robuste Grundlage für die meisten transaktionalen Geschäftsanwendungen bieten und Datenintegrität durch ein festes Schema sicherstellen."
+      },
+      "Object-Storage": {
+        "important": true,
+        "dynamic": true,
+        "what": "Der Umgang mit Systemen zur Speicherung großer, unstrukturierter Datenobjekte wie Dateien, Bildern oder Backups (z.B. AWS S3).",
+        "why": "Um große Datenmengen kostengünstig, hochverfügbar und skalierbar zu speichern, wofür relationale Datenbanken ungeeignet sind."
+      },
+      "Caching": {
+        "what": "Die gezielte Zwischenspeicherung von häufig abgerufenen Daten, um wiederholte, teure Berechnungen oder Datenbankzugriffe zu vermeiden.",
+        "why": "Um die Lese-Performance drastisch zu erhöhen und die Last auf den primären Datenspeichern zu reduzieren."
+      },
+      "Query Optimierung": {
+        "what": "Die Analyse und Verbesserung der Effizienz von Datenbankabfragen, um schnelle Antwortzeiten zu gewährleisten.",
+        "why": "Weil langsame Abfragen oft der Hauptgrund für eine schlechte Anwendungsperformance sind. Optimierung reduziert die Serverlast und verbessert die User Experience."
+      },
+      "Suche & Analytics": {
+        "dynamic": true,
+        "what": "Der Einsatz spezialisierter Systeme (z.B. Elasticsearch) für Volltextsuche, Aggregationen und Analyse von großen Datenmengen.",
+        "why": "Weil relationale Datenbanken bei komplexen Suchanfragen oder Analysen schnell an ihre Grenzen stoßen. Spezialsysteme bieten hierfür die nötige Performance."
+      },
+      "NoSQL": {
+        "dynamic": true,
+        "what": "Die Kenntnis über verschiedene nicht-relationale Datenbanktypen (Dokument, Key-Value etc.) und deren spezifische Anwendungsfälle.",
+        "why": "Um für bestimmte Probleme (z.B. flexible Schemata, hohe Schreiblasten) eine passendere und oft performantere Lösung als relationale Datenbanken zu wählen."
+      },
+      "Parti&shy;tion&shy;ierung": {
+        "what": "Die strategische Aufteilung großer Datenmengen auf mehrere Speicherorte (physisch oder logisch) zur Verbesserung von Skalierbarkeit und Performance.",
+        "why": "Um das Wachstum von Datenbanken zu bewältigen, die auf einem einzelnen Server nicht mehr performant wären. Ermöglicht quasi unbegrenzte Skalierbarkeit."
+      },
+      "Schema Evolution": {
+        "what": "Strategien für die Weiterentwicklung von Datenbankschemata im laufenden Betrieb ohne Ausfallzeiten (Zero-Downtime-Migration).",
+        "why": "Um die Agilität zu wahren und die Anwendung kontinuierlich weiterentwickeln zu können, ohne für jede Datenbankänderung ein Wartungsfenster zu benötigen."
+      },
+      "p4": {
+        "placeholder": true
+      },
+      "Eventual Consistency": {
+        "what": "Das Verständnis und die Anwendung von Konsistenzmodellen in verteilten Systemen, bei denen Daten nicht sofort, sondern erst nach einer kurzen Verzögerung konsistent sind.",
+        "why": "Weil in hochverteilten, globalen Systemen sofortige Konsistenz oft nicht erreichbar oder zu langsam ist. Ein fundamentaler Kompromiss für hohe Verfügbarkeit."
+      }
+    }
+  },
+  "OS & Network": {
+    "color": "text-stone-300",
+    "background": "bg-stone-300",
+    "position": {
+      "top": 100,
+      "left": 1000
+    },
+    "width": 4,
+    "skills": {
+      "p1": {
+        "placeholder": true
+      },
+      "p2": {
+        "placeholder": true
+      },
+      "p3": {
+        "placeholder": true
+      },
+      "Network-Debugging": {
+        "what": "Die systematische Analyse und Behebung von Netzwerkproblemen mit Standard-Tools wie `ping`, `traceroute`, `curl` oder `tcpdump`.",
+        "why": "Um die Ursache von Konnektivitätsproblemen schnell einzugrenzen, die oft schwer zu diagnostizieren sind."
+      },
+      "Hardware&shy;wissen": {
+        "what": "Ein grundlegendes Verständnis der Hardware-Ressourcen (CPU, RAM, I/O) und wie sie die Software-Performance beeinflussen.",
+        "why": "Um Performance-Probleme zu verstehen und Code zu schreiben, der Ressourcen effizient nutzt."
+      },
+      "Linux Basics": {
+        "important": true,
+        "dynamic": true,
+        "what": "Der sichere Umgang mit der Linux-Kommandozeile, dem Dateisystem, Prozessen und den Kern-Utilities.",
+        "why": "Weil die meisten Server-Anwendungen auf Linux-Systemen betrieben werden. Grundlegende Kenntnisse sind für Betrieb, Automatisierung und Fehlersuche unerlässlich."
+      },
+      "DNS": {
+        "what": "Das Verständnis des Domain Name Systems zur Auflösung von Hostnamen in IP-Adressen und seiner zentralen Rolle im Internet.",
+        "why": "Weil fast jede Netzwerkkommunikation mit einer DNS-Abfrage beginnt. Probleme mit DNS sind eine häufige Ursache für Ausfälle."
+      },
+      "gRPC & HTTP/2-3": {
+        "dynamic": true,
+        "what": "Die Kenntnis moderner Übertragungsprotokolle und RPC-Frameworks für eine effizientere Service-zu-Service-Kommunikation.",
+        "why": "Um die Latenz und den Overhead in Microservice-Architekturen im Vergleich zu älterem HTTP/1.1 deutlich zu reduzieren."
+      },
+      "Dateisystem & -Rechte": {
+        "what": "Die Kenntnis über Dateisysteme und die Verwaltung von Zugriffsrechten (Permissions) auf Betriebssystemebene.",
+        "why": "Um Probleme mit Dateizugriffen zu lösen und die Sicherheit durch korrekte Rechtevergabe zu gewährleisten."
+      },
+      "Shell Skripting": {
+        "important": true,
+        "dynamic": true,
+        "what": "Die Automatisierung von wiederkehrenden administrativen Aufgaben und Abläufen durch das Schreiben von Shell-Skripten (z.B. Bash).",
+        "why": "Um manuelle, fehleranfällige Arbeit zu eliminieren, die Effizienz zu steigern und reproduzierbare Prozesse zu schaffen."
+      },
+      "TLS/PKI & HTTPS": {
+        "important": true,
+        "what": "Das Wissen über die Funktionsweise von Transport Layer Security (TLS), Public Key Infrastructure (PKI) und die Anwendung in HTTPS zur Absicherung der Kommunikation.",
+        "why": "Um die Vertraulichkeit und Integrität von Daten im Internet zu gewährleisten. Ein fundamentales Konzept für jede sichere Web-Anwendung."
+      },
+      "VPC / V-Net": {
+        "dynamic": true,
+        "what": "Das Verständnis von virtuellen privaten Netzwerken in der Cloud, inklusive Subnetzen, Routing-Tabellen und Security Groups.",
+        "why": "Um in der Cloud eine sichere und isolierte Netzwerkumgebung für Anwendungen aufzubauen und den Netzwerkverkehr präzise zu steuern."
+      },
+      "p4": {
+        "placeholder": true
+      },
+      "p5": {
+        "placeholder": true
+      },
+      "TCP/IP Essentials": {
+        "what": "Das Verständnis des TCP/IP-Protokollstapels, der Unterschiede zwischen TCP und UDP sowie der Grundlagen von IP-Adressierung und Subnetting.",
+        "why": "Weil die gesamte Internet-Kommunikation darauf basiert. Dieses Wissen ist entscheidend für das Debugging von Verbindungsproblemen."
+      }
+    }
+  },
+  "Delivery & Platform": {
+    "color": "text-orange-400",
+    "background": "bg-orange-400",
+    "position": {
+      "top": 100,
+      "left": 1900
+    },
+    "width": 4,
+    "skills": {
+      "Load&shy;balancing": {
+        "what": "Die Verteilung von eingehendem Traffic auf mehrere Server zur Erhöhung der Ausfallsicherheit und Performance.",
+        "why": "Um Lastspitzen abzufangen und sicherzustellen, dass kein einzelner Server überlastet wird, was zu Ausfällen führen würde."
+      },
+      "Gateways": {
+        "what": "Die Verwaltung von zentralen API-Gateways für Routing, Sicherheit und Ratenbegrenzung.",
+        "why": "Um eine einheitliche Fassade für die dahinterliegenden Services zu schaffen und die Lastverteilung zu steuern."
+      },
+      "Backup & Recovery": {
+        "what": "Die Konzeption und regelmäßige Erprobung von Strategien zur Datensicherung und Wiederherstellung im Katastrophenfall.",
+        "why": "Um im Falle eines schwerwiegenden Fehlers den Geschäftsbetrieb wiederherstellen zu können. Ein Backup, das nie getestet wurde, ist kein Backup."
+      },
+      "Cost-Engineering": {
+        "what": "Die aktive Gestaltung und Überwachung von Systemen mit dem Ziel, die Betriebskosten (insbesondere in der Cloud) zu verstehen und zu optimieren.",
+        "why": "Weil Cloud-Kosten ohne Kontrolle schnell explodieren können. Löst das Problem, dass technische Entscheidungen ohne Rücksicht auf ihre finanziellen Auswirkungen getroffen werden."
+      },
+      "Service Mesh": {
+        "dynamic": true,
+        "what": "Der Einsatz von Service-Mesh-Technologien (z.B. Istio) zur Steuerung, Absicherung und Beobachtung der Service-zu-Service-Kommunikation.",
+        "why": "Um Querschnittsfunktionen wie Verschlüsselung, Routing und Telemetrie aus der Anwendungslogik heraus in eine separate Infrastrukturschicht zu verlagern."
+      },
+      "Build & Depen&shy;dencies": {
+        "important": true,
+        "what": "Die Verwaltung des Build-Prozesses und der externen Abhängigkeiten einer Anwendung.",
+        "why": "Um reproduzierbare und konsistente Artefakte zu erzeugen und die Kontrolle über die Software-Lieferkette zu behalten."
+      },
+      "K8S": {
+        "important": true,
+        "dynamic": true,
+        "what": "Die Kenntnis in der Automatisierung, Skalierung und Verwaltung von containerisierten Anwendungen mit Kubernetes.",
+        "why": "Weil Kubernetes der De-facto-Standard für den Betrieb moderner, skalierbarer und resilienter Anwendungen geworden ist."
+      },
+      "Dev Ex & Local Stack": {
+        "what": "Die Verbesserung der Entwickler-Erfahrung (Developer Experience), z.B. durch einfache Bereitstellung lokaler Entwicklungsumgebungen.",
+        "why": "Um die Produktivität und Zufriedenheit der Entwickler zu steigern. Ein reibungsloser lokaler Workflow führt zu schnelleren und qualitativ hochwertigeren Ergebnissen."
+      },
+      "Advanced Deployment": {
+        "what": "Die Anwendung fortgeschrittener, risikoarmer Release-Strategien wie Blue/Green, Canary oder A/B-Testing.",
+        "why": "Um neue Versionen schrittweise und kontrolliert auszurollen, die Auswirkungen zu beobachten und im Fehlerfall schnell zur vorigen Version zurückkehren zu können."
+      },
+      "CI/CD & Releases": {
+        "important": true,
+        "what": "Der Aufbau und die Wartung von automatisierten Pipelines für Continuous Integration und Continuous Delivery/Deployment.",
+        "why": "Um neue Features und Fehlerbehebungen schnell, automatisiert und mit geringem Risiko auszuliefern. Verkürzt den Wertschöpfungszyklus drastisch."
+      },
+      "Packaging": {
+        "important": true,
+        "what": "Die Erstellung und Verwaltung von auslieferbaren Software-Paketen, meist als Container Images (z.B. mit Docker).",
+        "why": "Um eine konsistente Laufzeitumgebung von der lokalen Entwicklung bis zur Produktion zu schaffen ('läuft auf meinem Rechner, aber nicht in Prod' wird gelöst)."
+      },
+      "Monitoring & Observability": {
+        "what": "Die Überwachung des Systemzustands und proaktive Analyse von Telemetriedaten (Logs, Metriken, Traces) im Betrieb.",
+        "why": "Um Probleme zu erkennen, bevor sie zu Ausfällen führen, und um im Störungsfall schnell die Ursache zu finden."
+      }
+    }
+  },
+  "Zusammenarbeit": {
+    "color": "text-blue-300",
+    "background": "bg-blue-300",
+    "position": {
+      "top": 1000,
+      "left": 100
+    },
+    "width": 5,
+    "skills": {
+      "Entschei&shy;dungen treffen": {
+        "what": "Die aktive Teilnahme an und Moderation von Diskussionen, um zu fundierten und vom Team getragenen Entscheidungen zu kommen.",
+        "why": "Um zu verhindern, dass Teams in Endlosdiskussionen stecken bleiben. Fördert das Commitment und die gemeinsame Verantwortung für den gewählten Weg."
+      },
+      "Spezifi&shy;kationen": {
+        "what": "Die präzise Beschreibung von Anforderungen und technischen Konzepten in Zusammenarbeit mit Fachexperten und Product Ownern.",
+        "why": "Um Missverständnisse zu vermeiden und sicherzustellen, dass alle Beteiligten ein gemeinsames Verständnis davon haben, was gebaut werden soll."
+      },
+      "Doku&shy;mentation": {
+        "important": true,
+        "what": "Die Erstellung von klarer, prägnanter und nützlicher technischer Dokumentation für verschiedene Zielgruppen.",
+        "why": "Um Wissen skalierbar zu machen, die Einarbeitung neuer Kollegen zu beschleunigen und die Abhängigkeit von einzelnen Personen zu reduzieren."
+      },
+      "Code Reviews": {
+        "important": true,
+        "what": "Das konstruktive Geben und Annehmen von Feedback zu Code-Änderungen, um die Qualität zu verbessern und Wissen zu teilen.",
+        "why": "Um die Code-Qualität kollektiv zu steigern, Wissen im Team zu verteilen, Fehler frühzeitig zu finden und eine gemeinsame Verantwortung für die Codebasis zu schaffen."
+      },
+      "p1": {
+        "placeholder": true
+      },
+      "Risiken managen": {
+        "what": "Das proaktive Erkennen, Bewerten und Kommunizieren von technischen und projektbezogenen Risiken.",
+        "why": "Um böse Überraschungen zu vermeiden. Indem Risiken frühzeitig adressiert werden, können Gegenmaßnahmen ergriffen werden, bevor sie zu echten Problemen werden."
+      },
+      "Schätzen": {
+        "important": true,
+        "what": "Das Abgeben von fundierten Aufwandsschätzungen für die Umsetzung von Anforderungen, um bei der Planung zu unterstützen.",
+        "why": "Um eine realistische Planung und Priorisierung zu ermöglichen. Löst das Problem von unzuverlässigen Zeitplänen und unerfüllten Erwartungen."
+      },
+      "Agiles Vorgehen": {
+        "important": true,
+        "dynamic": true,
+        "what": "Das Arbeiten nach agilen Prinzipien und Methoden (z.B. Scrum, Kanban), um iterativ und feedback-getrieben Wert zu liefern.",
+        "why": "Um die Flexibilität zu erhöhen, schneller auf geänderte Anforderungen reagieren zu können und sicherzustellen, dass das Team an den Dingen mit dem höchsten Geschäftswert arbeitet."
+      },
+      "Mentoring": {
+        "what": "Die Weitergabe von Wissen und Erfahrung an andere Teammitglieder, um deren persönliche und technische Entwicklung zu fördern.",
+        "why": "Um das Fähigkeitsniveau des gesamten Teams zu heben, Wissen zu verteilen und eine Kultur des kontinuierlichen Lernens zu etablieren."
+      },
+      "Kunden&shy;kommu&shy;nikation": {
+        "what": "Die effektive Kommunikation mit fachlichen Ansprechpartnern, um Anforderungen zu verstehen und technische Sachverhalte verständlich zu erklären.",
+        "why": "Um die Lücke zwischen Business und Technik zu schließen und sicherzustellen, dass die entwickelte Lösung die tatsächlichen Probleme der Nutzer löst."
+      }
+    }
+  },
+  "Programmierung & Implementierung": {
+    "color": "text-emerald-300",
+    "background": "bg-emerald-300",
+    "position": {
+      "top": 1000,
+      "left": 1000
+    },
+    "width": 4,
+    "skills": {
+      "Frontend (JS/TS)": {
+        "dynamic": true,
+        "what": "Die Entwicklung von Benutzeroberflächen im Browser mit JavaScript/TypeScript und modernen Frameworks (z.B. React, Vue).",
+        "why": "Um die Interaktion des Nutzers mit der Anwendung zu realisieren. Gutes Frontend-Engineering sorgt für eine intuitive und reaktionsschnelle User Experience."
+      },
+      "Modula&shy;risierung & Komponenten&shy;schnitt": {
+        "important": true,
+        "what": "Die Fähigkeit, Code innerhalb einer Anwendung in logische, wiederverwendbare und voneinander unabhängige Einheiten (Module, Komponenten) zu gliedern.",
+        "why": "Um die Komplexität zu reduzieren (Teile und Herrsche), die Wiederverwendbarkeit zu fördern und die Auswirkungen von Änderungen zu isolieren. Verhindert 'Spaghetti-Code'."
+      },
+      "APIs & Schnitt&shy;stellen": {
+        "important": true,
+        "what": "Die serverseitige Implementierung von Schnittstellen, die Daten und Funktionen für Clients (z.B. Web-Frontends, mobile Apps) bereitstellen.",
+        "why": "Um eine klare Trennung zwischen Frontend und Backend zu ermöglichen und eine kontrollierte, stabile Zugriffsmöglichkeit auf die Kernlogik zu schaffen."
+      },
+      "Backend (JVM)": {
+        "dynamic": true,
+        "what": "Die Entwicklung von robusten und skalierbaren Server-Anwendungen auf der Java Virtual Machine (z.B. mit Java/Kotlin und Spring Boot).",
+        "why": "Um die serverseitige Geschäftslogik, Datenverarbeitung und die Anbindung an Datenbanken zu implementieren. Bildet das Rückgrat vieler Unternehmensanwendungen."
+      },
+      "Concurrency & Async": {
+        "what": "Der sichere Umgang mit Nebenläufigkeit und asynchroner Programmierung zur Verbesserung von Performance und Reaktionsfähigkeit.",
+        "why": "Um Blockaden in der Anwendung zu vermeiden und Ressourcen (z.B. CPU-Kerne) optimal auszunutzen. Essentiell für schnelle, moderne Systeme."
+      },
+      "Frameworks & Libs": {
+        "important": true,
+        "dynamic": true,
+        "what": "Die effiziente und sachgemäße Nutzung von externen Bibliotheken und Anwendungs-Frameworks, ohne das Rad neu zu erfinden.",
+        "why": "Um die Entwicklungsgeschwindigkeit zu erhöhen und auf bewährte Lösungen für Standardprobleme zurückzugreifen. Wichtig ist, deren Funktionsweise und Grenzen zu verstehen."
+      },
+      "Clean Code": {
+        "important": true,
+        "what": "Die Anwendung von Prinzipien zur Erstellung von Code, der nicht nur funktioniert, sondern auch lesbar, verständlich und einfach zu warten ist.",
+        "why": "Weil der Großteil der Kosten von Software in der Wartung und Änderung entsteht. Lesbarer Code ist die Grundlage für jede effiziente Fehlerbehebung und Weiterentwicklung."
+      },
+      "Debugging & Profiling": {
+        "what": "Die systematische Fehlersuche und Analyse des Laufzeitverhaltens (Performance, Speicher) von Anwendungen mit geeigneten Werkzeugen.",
+        "why": "Weil Fehler unvermeidlich sind. Effizientes Debugging verkürzt die Zeit zur Problemlösung drastisch. Profiling deckt versteckte Performance-Flaschenhälse auf."
+      },
+      "Scientific (Python)": {
+        "dynamic": true,
+        "what": "Der Einsatz von Python und spezialisierten Bibliotheken (z.B. Pandas, NumPy) für datenintensive und wissenschaftliche Berechnungen.",
+        "why": "Um komplexe Datenanalysen, Machine-Learning-Modelle oder Simulationen umzusetzen, die in klassischen Backend-Sprachen oft aufwändiger wären."
+      },
+      "Streams & IO": {
+        "what": "Die Verarbeitung von sequenziellen Daten (Streams) für das effiziente Lesen und Schreiben aus Quellen wie Dateien oder Netzwerkverbindungen, ohne alle Daten auf einmal im Speicher halten zu müssen.",
+        "why": "Weil fast jede Anwendung mit externen Daten interagiert. Effizientes IO-Management ist entscheidend für die Performance und Skalierbarkeit, insbesondere bei der Verarbeitung großer Dateien oder bei intensiver Netzwerkkommunikation."
+      },
+      "Daten&shy;struk&shy;turen & Algo&shy;rithmen": {
+        "important": true,
+        "what": "Die Anwendung fundamentaler Informatik-Konzepte zur effizienten Lösung von Problemen in Bezug auf Datenverarbeitung und Logik.",
+        "why": "Weil die Wahl der richtigen Datenstruktur oder des richtigen Algorithmus einen dramatischen Einfluss auf Performance und Ressourcenverbrauch haben kann."
+      }
+    }
+  },
+  "Qualität & Testing": {
+    "color": "text-yellow-400",
+    "background": "bg-yellow-400",
+    "position": {
+      "top": 1000,
+      "left": 1900
+    },
+    "width": 4,
+    "skills": {
+      "p1": {
+        "placeholder": true
+      },
+      "p2": {
+        "placeholder": true
+      },
+      "p3": {
+        "placeholder": true
+      },
+      "Test&shy;daten&shy;manage&shy;ment": {
+        "what": "Die Erstellung, Verwaltung und Bereitstellung von realistischen, konsistenten und datenschutzkonformen Daten für Testzwecke.",
+        "why": "Weil die Qualität der Tests stark von der Qualität der Testdaten abhängt. Schlechte Testdaten führen dazu, dass Fehler nicht gefunden werden oder Tests fehlschlagen."
+      },
+      "p4": {
+        "placeholder": true
+      },
+      "E2E-Tests": {
+        "what": "Automatisierte Tests, die den gesamten Anwendungsfluss aus der Perspektive des Endbenutzers simulieren.",
+        "why": "Um sicherzustellen, dass das Zusammenspiel aller Komponenten korrekt funktioniert und die kritischen Benutzerpfade intakt sind."
+      },
+      "Contract-testing": {
+        "what": "Die Sicherstellung, dass die Schnittstellen (Contracts) zwischen zwei separaten Diensten (z.B. Microservices) kompatibel sind, ohne beide Dienste komplett hochfahren zu müssen.",
+        "why": "Um Integrationsfehler frühzeitig im Entwicklungszyklus zu finden und Teams zu ermöglichen, unabhängig voneinander zu releasen."
+      },
+      "TDD & BDD": {
+        "what": "Testgetriebene (TDD) und verhaltensgetriebene (BDD) Entwicklungsmethoden, bei denen Tests bzw. Spezifikationen vor dem eigentlichen Code geschrieben werden.",
+        "why": "Um das Design des Codes zu verbessern und sicherzustellen, dass nur der Code geschrieben wird, der zur Erfüllung der Anforderungen notwendig ist."
+      },
+      "Visuelle Tests": {
+        "what": "Die automatisierte Überprüfung von grafischen Benutzeroberflächen auf unerwünschte visuelle Änderungen (Layout, Farben, etc.).",
+        "why": "Um visuelle Regressionen zu fangen, die von funktionalen Tests nicht erkannt werden, und eine konsistente User Experience sicherzustellen."
+      },
+      "Lasttests": {
+        "what": "Die systematische Untersuchung des Systemverhaltens unter hoher Last, um Performance-Engpässe und Stabilitätsgrenzen zu identifizieren.",
+        "why": "Um sicherzustellen, dass die Anwendung auch zu Spitzenzeiten (z.B. Black Friday) performant und verfügbar bleibt und nicht unter der Last zusammenbricht."
+      },
+      "Testbarer Code": {
+        "important": true,
+        "what": "Code von vornherein so zu schreiben, dass er leicht isoliert und durch automatisierte Tests überprüft werden kann.",
+        "why": "Weil nicht testbarer Code zu manuellen, fehleranfälligen und langsamen Testprozessen führt. Testbarkeit ist die Voraussetzung für eine effektive Automatisierung."
+      },
+      "Test&shy;strategie & Pyramide": {
+        "important": true,
+        "what": "Die Planung eines ausgewogenen und wirtschaftlichen Verhältnisses verschiedener Testarten (Unit-, Integrations-, E2E-Tests).",
+        "why": "Um mit begrenzten Ressourcen eine maximale Testabdeckung und schnelles Feedback zu erreichen. Verhindert eine 'Test-Eiswaffel' mit zu vielen langsamen E2E-Tests."
+      },
+      "p5": {
+        "placeholder": true
+      },
+      "p6": {
+        "placeholder": true
+      },
+      "Wartbare Tests": {
+        "important": true,
+        "what": "Tests so zu schreiben, dass sie verständlich, robust und einfach an Änderungen im produktiven Code anpassbar sind.",
+        "why": "Weil veraltete oder unzuverlässige Tests ignoriert werden und ihren Wert verlieren. Gute Tests sind eine verlässliche Dokumentation und ein Sicherheitsnetz für Refactorings."
+      }
+    }
+  },
+  "AI": {
+    "color": "text-red-600",
+    "background": "bg-red-500",
+    "position": {
+      "top": 1900,
+      "left": 100
+    },
+    "width": 3,
+    "skills": {
+      "KI Plattformen & ML-Ops": {
+        "dynamic": true,
+        "what": "Der Aufbau und Betrieb der Infrastruktur für das Training, die Bereitstellung, Versionierung und Überwachung von KI-Modellen.",
+        "why": "Um den Lebenszyklus von KI-Modellen zu professionalisieren und reproduzierbar zu machen, ähnlich wie DevOps für traditionelle Software."
+      },
+      "KI Basics & Literacy": {
+        "important": true,
+        "what": "Ein grundlegendes Verständnis der Konzepte, Möglichkeiten und Grenzen von KI und Machine Learning.",
+        "why": "Um realistische Anwendungsfälle für KI zu identifizieren, Hype von Substanz zu unterscheiden und fundierte Entscheidungen über den Einsatz von KI-Technologien treffen zu können."
+      },
+      "Agentic Coding": {
+        "dynamic": true,
+        "what": "Die Nutzung von KI-Agenten und -Werkzeugen (z.B. Co-Piloten) als produktive Unterstützung im Softwareentwicklungsprozess.",
+        "why": "Um die Effizienz bei Routineaufgaben zu steigern und den Fokus auf komplexere Design- und Architekturprobleme zu legen."
+      },
+      "KI Lösungs&shy;entwicklung": {
+        "what": "Die Konzeption und Implementierung von End-to-End-Lösungen, die auf KI-Technologien (z.B. LLMs) basieren, um konkrete Geschäftsprobleme zu lösen.",
+        "why": "Um den abstrakten Wert von KI in konkrete, funktionierende Produkte und Features zu überführen, die einen messbaren Nutzen bringen."
+      }
+    }
+  },
+  "Architektur & Design": {
+    "color": "text-zinc-400",
+    "background": "bg-zinc-400",
+    "position": {
+      "top": 1900,
+      "left": 1000
+    },
+    "width": 5,
+    "skills": {
+      "p1": {
+        "placeholder": true
+      },
+      "Caching & State": {
+        "what": "Der gezielte Einsatz von Caching-Mechanismen zur Performance-Steigerung und die bewusste Verwaltung von Anwendungszuständen (State).",
+        "why": "Um die Latenz für Endnutzer zu reduzieren und die Last auf Backend-Systemen zu verringern. Löst Performance-Engpässe."
+      },
+      "Resilienz": {
+        "what": "Der Entwurf von Systemen, die Fehler und Teilausfälle (z.B. eines angebundenen Services) tolerieren und sich davon erholen können.",
+        "why": "Um die Gesamtverfügbarkeit des Systems zu gewährleisten, auch wenn einzelne Komponenten versagen. Ein Ausfall darf nicht zum Dominoeffekt führen."
+      },
+      "Evolvierbarkeit": {
+        "what": "Die Fähigkeit, Systeme so zu gestalten, dass sie sich an zukünftige, heute noch unbekannte Anforderungen anpassen können, ohne grundlegend neu gebaut werden zu müssen.",
+        "why": "Um zu verhindern, dass Software bei neuen Geschäftsanforderungen teuer und risikoreich von Grund auf neu geschrieben werden muss. Schützt die Investition in die Software."
+      },
+      "Design- & Software-Muster": {
+        "what": "Die Kenntnis und Anwendung bewährter Lösungsstrategien für wiederkehrende Entwurfsprobleme in der Softwareentwicklung.",
+        "why": "Um das Rad nicht neu zu erfinden und auf erprobte, verständliche und wartbare Lösungsansätze zurückzugreifen."
+      },
+      "p5": {
+        "placeholder": true
+      },
+      "Security-by-Design": {
+        "what": "Die Integration von Sicherheitsüberlegungen von Anfang an und auf allen Ebenen in den Entwurfsprozess, statt sie als nachträglichen Schritt zu betrachten.",
+        "why": "Weil nachträglich hinzugefügte Sicherheit oft lückenhaft und teuer ist. Dieser Ansatz minimiert die Angriffsfläche und reduziert das Risiko von Sicherheitsvorfällen fundamental."
+      },
+      "Events- & Workflow": {
+        "what": "Der Entwurf von ereignisgesteuerten Architekturen und die Orchestrierung oder Choreografie komplexer Geschäftsabläufe.",
+        "why": "Um Systeme lose zu koppeln und besser auf Geschäftsereignisse reagieren zu können. Dies erhöht die Flexibilität und Skalierbarkeit."
+      },
+      "Domänen&shy;schnitt": {
+        "important": true,
+        "what": "Die Zerlegung eines komplexen Geschäftsbereichs in logische Teilbereiche (Bounded Contexts), um die Softwareentwicklung zu fokussieren.",
+        "why": "Um die Software an der Geschäftslogik auszurichten, die Komplexität beherrschbar zu machen und eine gemeinsame Sprache zwischen Entwicklung und Fachbereich zu schaffen."
+      },
+      "Ent&shy;scheidungs&shy;klarheit": {
+        "what": "Das bewusste Treffen, nachvollziehbare Dokumentieren (z.B. mit ADRs) und klare Kommunizieren von Architekturentscheidungen.",
+        "why": "Um zu vermeiden, dass getroffene Entscheidungen in Vergessenheit geraten und später in Frage gestellt werden. Schafft Transparenz und hilft neuen Teammitgliedern."
+      },
+      "p6": {
+        "placeholder": true
+      },
+      "Multitenancy & Isolation": {
+        "what": "Systeme für mehrere Mandanten (Kunden) zu bauen, deren Daten und Prozesse sicher und effizient voneinander getrennt sind.",
+        "why": "Um Skaleneffekte zu erzielen, indem eine einzige Software-Instanz mehrere Kunden bedient, ohne die Sicherheit und den Datenschutz zu kompromittieren."
+      },
+      "Skalierung & Performance": {
+        "what": "Der Entwurf von Architekturen, die für hohe Lasten und schnelle Antwortzeiten ausgelegt sind, um mit wachsenden Nutzerzahlen oder Datenmengen umgehen zu können.",
+        "why": "Um eine positive User Experience zu gewährleisten und sicherzustellen, dass das System unter Last nicht zusammenbricht, was zu Geschäftsverlusten führen würde."
+      },
+      "Qualitäts&shy;ziele als Leit&shy;planken": {
+        "important": true,
+        "what": "Die Behandlung von nicht-funktionalen Anforderungen (z.B. Performance, Sicherheit) als zentrale und entscheidende Treiber für Architekturentscheidungen.",
+        "why": "Um sicherzustellen, dass das System nicht nur 'was' es soll, sondern auch 'wie gut' es das tut. Verhindert teure Redesigns, weil kritische Eigenschaften zu spät berücksichtigt wurden."
+      },
+      "API-Design & Governance": {
+        "important": true,
+        "what": "Der Prozess des Entwerfens, Dokumentierens und Verwaltens von Programmierschnittstellen (APIs), die als stabile Verträge für die Kommunikation zwischen Softwarekomponenten dienen.",
+        "why": "APIs sind die Verträge zwischen Systemteilen. Gutes Design reduziert die Kopplung, fördert die Wiederverwendbarkeit und ermöglicht es Teams, parallel und effizient zu arbeiten."
+      },
+      "Ready-for-Ops": {
+        "what": "Systeme so zu gestalten, dass sie für Betriebsteams einfach zu verwalten, zu überwachen und zu übernehmen sind.",
+        "why": "Um die Reibung zwischen Entwicklung und Betrieb (DevOps) zu minimieren. Ein System, das schwer zu betreiben ist, verursacht hohe laufende Kosten und lange Reaktionszeiten bei Störungen."
+      },
+      "Observability-Design": {
+        "what": "Systeme von Beginn an so zu konzipieren, dass ihr interner Zustand (durch Logs, Metriken, Traces) von außen leicht beobachtbar ist.",
+        "why": "Weil man nur das managen und reparieren kann, was man auch versteht. Ohne Observability ist die Fehlersuche in komplexen Systemen ein Blindflug."
+      },
+      "Cloud Design & Architektur": {
+        "dynamic": true,
+        "what": "Die Anwendung von Prinzipien und Mustern für den Bau von robusten, skalierbaren und kosteneffizienten Anwendungen in Cloud-Umgebungen (z.B. AWS, Azure, GCP).",
+        "why": "Um die Vorteile der Cloud (z.B. Elastizität, Pay-per-Use, Managed Services) optimal zu nutzen und Fallstricke wie hohe Kosten oder Vendor-Lock-in zu vermeiden."
+      },
+      "p7": {
+        "placeholder": true
+      },
+      "Inte&shy;grations&shy;architektur": {
+        "important": true,
+        "what": "Die systematische Planung der Kommunikation und des Datenaustauschs zwischen verschiedenen Systemen, Services und Drittanbietern.",
+        "why": "Weil moderne Anwendungen selten isoliert sind. Eine durchdachte Integration verhindert Daten-Silos, inkonsistente Prozesse und komplexe, brüchige Punkt-zu-Punkt-Verbindungen."
+      }
+    }
+  },
+  "Security & Compliance": {
+    "color": "text-pink-400",
+    "background": "bg-pink-400",
+    "position": {
+      "top": 1900,
+      "left": 1900
+    },
+    "width": 4,
+    "skills": {
+      "p1": {
+        "placeholder": true
+      },
+      "Identity- & Access-Management": {
+        "what": "Die Umsetzung von Authentifizierung (Wer bist du?) und Autorisierung (Was darfst du?) nach dem Prinzip der geringsten Rechte.",
+        "why": "Um sicherzustellen, dass Benutzer und Systeme nur auf die Daten und Funktionen zugreifen können, die sie für ihre Aufgabe unbedingt benötigen."
+      },
+      "Secure Coding": {
+        "important": true,
+        "what": "Die Anwendung von Entwicklungspraktiken zur Vermeidung gängiger Sicherheitslücken im Code (z.B. Injection, XSS).",
+        "why": "Um Sicherheitslücken zu schließen, bevor sie entstehen. Dies ist weitaus effektiver und günstiger als die Reaktion auf einen erfolgreichen Angriff."
+      },
+      "Secret Management": {
+        "important": true,
+        "what": "Der sichere Umgang, die Speicherung und Rotation von sensiblen Informationen wie Passwörtern, API-Schlüsseln und Zertifikaten.",
+        "why": "Weil hartcodierte oder schlecht geschützte Secrets ein häufiges und leicht ausnutzbares Einfallstor für Angreifer sind."
+      },
+      "Verschlüsselung": {
+        "what": "Die konsequente Anwendung von kryptografischen Verfahren zum Schutz von Daten bei der Übertragung (in-transit) und Speicherung (at-rest).",
+        "why": "Um sicherzustellen, dass Daten auch bei einem Abgriff (Netzwerk) oder Diebstahl (Festplatte) für Unbefugte unlesbar und wertlos sind."
+      },
+      "SW-Supply-Chain Security": {
+        "what": "Die Absicherung der Software-Lieferkette, insbesondere der verwendeten externen Bibliotheken und Abhängigkeiten, auf bekannte Schwachstellen.",
+        "why": "Weil ein Großteil modernen Codes aus Third-Party-Komponenten besteht. Eine Schwachstelle in einer einzigen Abhängigkeit kann das gesamte System kompromittieren."
+      },
+      "Threat Modeling": {
+        "what": "Die systematische Analyse einer Anwendung, um potenzielle Sicherheitsbedrohungen und Schwachstellen proaktiv zu identifizieren und Gegenmaßnahmen zu planen.",
+        "why": "Um den Fokus der Sicherheitsbemühungen auf die wahrscheinlichsten und gefährlichsten Angriffsvektoren zu lenken, anstatt blind Maßnahmen umzusetzen."
+      },
+      "Privacy": {
+        "what": "Der technische und konzeptionelle Datenschutz (Privacy by Design), insbesondere im Hinblick auf die Einhaltung von Gesetzen wie der DSGVO.",
+        "why": "Um die Privatsphäre der Nutzer zu schützen und hohe Bußgelder sowie Reputationsschäden durch Datenschutzverletzungen zu vermeiden."
+      },
+      "p2": {
+        "placeholder": true
+      },
+      "p3": {
+        "placeholder": true
+      },
+      "Auditability": {
+        "what": "Die Sicherstellung, dass sicherheitsrelevante Ereignisse (z.B. Logins, Zugriffsversuche) nachvollziehbar und manipulationssicher protokolliert werden.",
+        "why": "Um im Falle eines Sicherheitsvorfalls nachvollziehen zu können, was passiert ist, und um die Einhaltung von Compliance-Anforderungen nachweisen zu können."
+      }
+    }
+  }
+}
