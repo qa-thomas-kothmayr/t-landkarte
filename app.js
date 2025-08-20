@@ -210,7 +210,7 @@ function buildMap(container, data) {
                 const col = i % island.width;
                 const offset = (col % 2 === 1) ? 'calc((var(--s) + var(--m)) / 2)' : '0px';
                 hex.style.setProperty('--odd-offset', offset);
-                if (!s.important) hex.style.filter = 'brightness(0.8)';
+                if (!s.important) hex.style.filter = 'brightness(0.6)';
                 hex.setAttribute('role', 'button');
                 hex.setAttribute('tabindex', '0');
                 hex.setAttribute('aria-label', `${name} öffnen`);
