@@ -30,6 +30,13 @@ body {
 
 /* Container: wird per Transform verschoben+skaliert */
 #map-container {
+    display: grid;
+    /* 3 Spalten für Inseln */
+    grid-template-columns: repeat(3, minmax(var(--island-w), 1fr));
+    gap: 48px;
+    padding: 96px 48px 48px;
+    place-items: center;
+
     position: relative;
     transform-origin: 0 0;
     transition: transform 0.08s linear;
@@ -38,7 +45,7 @@ body {
 
 /* ============ Inseln ============ */
 .island-wrapper {
-    position: absolute;
+    position: relative;
     padding: 20px;
     width: var(--island-w);
     height: var(--island-h);
@@ -49,6 +56,14 @@ body {
     border-radius: 0.75rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
     backdrop-filter: blur(1px);
+}
+
+/* Leere Zelle im Insel-Grid (Platzhalter) */
+.island-placeholder {
+    width: var(--island-w);
+    height: var(--island-h);
+    opacity: 0;             /* nimmt Platz ein, ist unsichtbar */
+    pointer-events: none;
 }
 
 .island-wrapper h2 {
@@ -164,5 +179,5 @@ body {
     padding: 1rem 2rem;
     pointer-events: none;
     z-index: 20;
-    text-shadow: 0px 0px 2px #1e293b;
+    text-shadow: 0 0 2px #1e293b;
 }

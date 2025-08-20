@@ -161,10 +161,16 @@ function buildMap(container, data) {
     const frag = document.createDocumentFragment();
     for (const category of Object.keys(data)) {
         const island = data[category];
+
+        if (island.placeholder) {
+            const ph = document.createElement('div');
+            ph.className = 'island-placeholder';
+            frag.appendChild(ph);
+            continue;
+        }
+
         const wrapper = document.createElement('section');
         wrapper.className = `island-wrapper ${island.background}/20`;
-        wrapper.style.top = `${island.position.top}px`;
-        wrapper.style.left = `${island.position.left}px`;
         wrapper.setAttribute('aria-label', `Insel ${category}`);
 
         const title = document.createElement('h2');

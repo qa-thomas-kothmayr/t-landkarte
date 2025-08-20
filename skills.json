@@ -2,10 +2,6 @@
   "Daten & Storage": {
     "color": "text-purple-300",
     "background": "bg-purple-300",
-    "position": {
-      "top": 100,
-      "left": 100
-    },
     "width": 4,
     "skills": {
       "p1": {
@@ -74,10 +70,6 @@
   "OS & Network": {
     "color": "text-stone-300",
     "background": "bg-stone-300",
-    "position": {
-      "top": 100,
-      "left": 1000
-    },
     "width": 4,
     "skills": {
       "p1": {
@@ -147,10 +139,6 @@
   "Delivery & Platform": {
     "color": "text-orange-400",
     "background": "bg-orange-400",
-    "position": {
-      "top": 100,
-      "left": 1900
-    },
     "width": 4,
     "skills": {
       "Load&shy;balancing": {
@@ -212,10 +200,6 @@
   "Zusammenarbeit": {
     "color": "text-blue-300",
     "background": "bg-blue-300",
-    "position": {
-      "top": 1000,
-      "left": 100
-    },
     "width": 5,
     "skills": {
       "Entschei&shy;dungen treffen": {
@@ -267,10 +251,6 @@
   "Programmierung & Implementierung": {
     "color": "text-emerald-300",
     "background": "bg-emerald-300",
-    "position": {
-      "top": 1000,
-      "left": 1000
-    },
     "width": 4,
     "skills": {
       "Frontend (JS/TS)": {
@@ -331,10 +311,6 @@
   "Qualität & Testing": {
     "color": "text-yellow-400",
     "background": "bg-yellow-400",
-    "position": {
-      "top": 1000,
-      "left": 1900
-    },
     "width": 4,
     "skills": {
       "p1": {
@@ -399,10 +375,6 @@
   "AI": {
     "color": "text-red-600",
     "background": "bg-red-500",
-    "position": {
-      "top": 1900,
-      "left": 100
-    },
     "width": 3,
     "skills": {
       "KI Plattformen & ML-Ops": {
@@ -429,10 +401,6 @@
   "Architektur & Design": {
     "color": "text-zinc-400",
     "background": "bg-zinc-400",
-    "position": {
-      "top": 1900,
-      "left": 1000
-    },
     "width": 5,
     "skills": {
       "p1": {
@@ -521,10 +489,6 @@
   "Security & Compliance": {
     "color": "text-pink-400",
     "background": "bg-pink-400",
-    "position": {
-      "top": 1900,
-      "left": 1900
-    },
     "width": 4,
     "skills": {
       "p1": {
