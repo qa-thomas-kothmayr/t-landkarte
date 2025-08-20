@@ -150,10 +150,23 @@ function setupPanZoom(viewport, map) {
         apply();
     }
 
+    // Zoomen per Schritt (positiv = rein, negativ = raus). Pivot optional (Viewport-Mitte sonst).
+    function zoomBy(step, pivot){
+        const rect = viewport.getBoundingClientRect();
+        const mx = pivot ? pivot.x - rect.left : rect.width  / 2;
+        const my = pivot ? pivot.y - rect.top  : rect.height / 2;
+        const zoomFactor = Math.exp(step);
+        const newScale = clamp(scale * zoomFactor, 0.2, 2);
+        panX = mx - (mx - panX) * (newScale / scale);
+        panY = my - (my - panY) * (newScale / scale);
+        scale = newScale;
+        apply();
+    }
+
     const ro = new ResizeObserver(() => centerOnContent());
     ro.observe(viewport);
 
-    return {centerOnContent, centerOnElement};
+    return {centerOnContent, centerOnElement, zoomBy};
 }
 
 // -------- Map
@@ -263,6 +276,22 @@ try {
             const island = activeHex.closest('.island-wrapper');
             if (island) pz.centerOnElement(island);
         }, 0);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        // Modal offen? Dann nicht stören
+        const modalOpen = !document.getElementById('modal-backdrop')
+            .classList.contains('pointer-events-none');
+        if (modalOpen) return;
+
+        // Zoom
+        if (e.key === '+' || e.key === '=' || e.code === 'NumpadAdd'){
+            e.preventDefault(); pz.zoomBy(0.1); return;
+        }
+        if (e.key === '-' || e.key === '_' || e.code === 'NumpadSubtract'){
+            e.preventDefault(); pz.zoomBy(-0.1); return;
+        }
+
     });
 
     requestAnimationFrame(() => pz.centerOnContent());
