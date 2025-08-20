@@ -288,9 +288,10 @@
         "what": "Die Anwendung von Prinzipien zur Erstellung von Code, der nicht nur funktioniert, sondern auch lesbar, verständlich und einfach zu warten ist.",
         "why": "Weil der Großteil der Kosten von Software in der Wartung und Änderung entsteht. Lesbarer Code ist die Grundlage für jede effiziente Fehlerbehebung und Weiterentwicklung."
       },
-      "Debugging & Profiling": {
-        "what": "Die systematische Fehlersuche und Analyse des Laufzeitverhaltens (Performance, Speicher) von Anwendungen mit geeigneten Werkzeugen.",
-        "why": "Weil Fehler unvermeidlich sind. Effizientes Debugging verkürzt die Zeit zur Problemlösung drastisch. Profiling deckt versteckte Performance-Flaschenhälse auf."
+      "Versions&shy;kontrolle & Git": {
+        "what": "Die systematische Erfassung und Verwaltung von Änderungen am Quellcode über die Zeit. Git ist das mit Abstand am weitesten verbreitete Werkzeug dafür.",
+        "why": "Es ist die Grundlage für jede professionelle Zusammenarbeit im Team. Ermöglicht paralleles Arbeiten, nachvollziehbare Änderungen, die Wiederherstellung alter Versionen und ist die Voraussetzung für Code Reviews und CI/CD-Pipelines.",
+        "important": true
       },
       "Scientific (Python)": {
         "dynamic": true,
@@ -305,6 +306,10 @@
         "important": true,
         "what": "Die Anwendung fundamentaler Informatik-Konzepte zur effizienten Lösung von Problemen in Bezug auf Datenverarbeitung und Logik.",
         "why": "Weil die Wahl der richtigen Datenstruktur oder des richtigen Algorithmus einen dramatischen Einfluss auf Performance und Ressourcenverbrauch haben kann."
+      },
+      "Debugging & Profiling": {
+        "what": "Die systematische Fehlersuche und Analyse des Laufzeitverhaltens (Performance, Speicher) von Anwendungen mit geeigneten Werkzeugen.",
+        "why": "Weil Fehler unvermeidlich sind. Effizientes Debugging verkürzt die Zeit zur Problemlösung drastisch. Profiling deckt versteckte Performance-Flaschenhälse auf."
       }
     }
   },
