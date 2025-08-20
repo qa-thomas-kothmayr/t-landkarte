@@ -1,5 +1,5 @@
 {
-  "Daten & Storage": {
+  "4\uFE0F⃣ Daten & Storage": {
     "color": "text-purple-300",
     "background": "bg-purple-300",
     "width": 4,
@@ -67,7 +67,7 @@
       }
     }
   },
-  "OS & Network": {
+  "4\uFE0F⃣ OS & Network": {
     "color": "text-stone-300",
     "background": "bg-stone-300",
     "width": 4,
@@ -136,7 +136,7 @@
       }
     }
   },
-  "Delivery & Platform": {
+  "4\uFE0F⃣ Delivery & Platform": {
     "color": "text-orange-400",
     "background": "bg-orange-400",
     "width": 4,
@@ -197,7 +197,7 @@
       }
     }
   },
-  "Zusammenarbeit": {
+  "2\uFE0F⃣ Zusammenarbeit": {
     "color": "text-blue-300",
     "background": "bg-blue-300",
     "width": 5,
@@ -248,7 +248,7 @@
       }
     }
   },
-  "Programmierung & Implementierung": {
+  "1\uFE0F⃣ Programmierung & Implementierung": {
     "color": "text-emerald-300",
     "background": "bg-emerald-300",
     "width": 4,
@@ -313,7 +313,7 @@
       }
     }
   },
-  "Qualität & Testing": {
+  "3\uFE0F⃣ Qualität & Testing": {
     "color": "text-yellow-400",
     "background": "bg-yellow-400",
     "width": 4,
@@ -377,7 +377,7 @@
       }
     }
   },
-  "AI": {
+  "5\uFE0F⃣ AI": {
     "color": "text-red-600",
     "background": "bg-red-500",
     "width": 3,
@@ -403,7 +403,7 @@
       }
     }
   },
-  "Architektur & Design": {
+  "5\uFE0F⃣ Architektur & Design": {
     "color": "text-zinc-400",
     "background": "bg-zinc-400",
     "width": 5,
@@ -491,7 +491,7 @@
       }
     }
   },
-  "Security & Compliance": {
+  "5\uFE0F⃣ Security & Compliance": {
     "color": "text-pink-400",
     "background": "bg-pink-400",
     "width": 4,
